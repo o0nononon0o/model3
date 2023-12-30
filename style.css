@@ -33,7 +33,7 @@ p{
 }
 
 section{
-  padding: 64px 0;
+  padding: 32px 0;
 }
 
 section img{
@@ -115,8 +115,9 @@ header{
 
 #gallery h3{
   position: absolute;
-  bottom: 100px;
+  bottom: 50px;
   right: 32px;
+  font-size: 16px;
   display: block;
   width: 50%;
   height: 64px;
@@ -172,7 +173,8 @@ header{
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 32px;
+  font-size: 16px;
+  color: black;
   height: 100%;
   background: inherit;
   border: none;
@@ -184,7 +186,8 @@ header{
   position: absolute;
   top: 0;
   right: 0;
-  font-size: 32px;
+  font-size: 16px;
+  color: black;
   height: 100%;
   background: inherit;
   border: none;
@@ -203,7 +206,7 @@ ul{
 }
 
 ul img{
-  width: 400px;
+  width: 240px;
   height: auto;
 }
 
@@ -311,6 +314,14 @@ small{
     font-size: 28px;
   }
 
+  h3{
+    font-size: 28px;
+  }
+  
+  #gallery h3{
+    font-size: 20px;
+  }
+
   /* header */
 
   header{
@@ -332,6 +343,9 @@ small{
     height: 640px;
   }
 
+  .slide-l1, .slide-l2, .slide-r1, .slide-r2{
+    font-size: 32px;
+  }
 
 
 
