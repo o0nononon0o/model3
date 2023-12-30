@@ -84,6 +84,27 @@
     }
   });
 
+  const form = document.querySelector('form');
+  const btn = document.querySelector('form .btn');
+
+  form.addEventListener('input', update);
+  form.addEventListener('change', update);
+
+  function update() {
+    const isRequired = form.checkValidity();
+    if (isRequired) {
+      btn.disabled = false;
+      btn.style.opacity = 1;
+      btn.style.cursor = "pointer";
+      return;
+    } else {
+      btn.disabled = true;
+      btn.style.opacity = .2;
+      btn.style.cursor = "not-allowed";
+    }
+  }
+  
+
 
 }
 

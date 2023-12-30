@@ -222,7 +222,12 @@ ul img{
 
 .ul3{
   display: flex;
-  animation: infinity-scroll3 30s infinite linear;
+  animation: infinity-scroll2 30s infinite linear;
+}
+
+.ul4{
+  display: flex;
+  animation: infinity-scroll2 30s infinite linear;
 }
 
 @keyframes infinity-scroll1{
@@ -235,15 +240,6 @@ ul img{
 }
 
 @keyframes infinity-scroll2{
-  from {
-    transform: translateX(0);
-  }
-    to {
-    transform: translateX(-300%);
-  }
-}
-
-@keyframes infinity-scroll3{
   from {
     transform: translateX(0);
   }
