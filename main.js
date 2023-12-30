@@ -33,14 +33,14 @@
 
   window.addEventListener('scroll', () => {
     secElements.forEach(secElement => {
-      if (secElement.getBoundingClientRect().top < window.innerHeight * 0.7) {
+      if (secElement.getBoundingClientRect().top < window.innerHeight * 0.8) {
         secElement.classList.add('fade');
       }
     })
   });
 
   window.addEventListener('scroll', () => {
-    if(document.querySelector('#gallery img').getBoundingClientRect().top < window.innerHeight * 0.7) {
+    if(document.querySelector('#gallery img').getBoundingClientRect().top < window.innerHeight * 0.8) {
       document.querySelector('#gallery h3').classList.add('fade');
     }
   });
