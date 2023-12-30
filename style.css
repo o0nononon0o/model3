@@ -1,0 +1,338 @@
+@charset 'utf-8';
+
+body{
+  margin: 0;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+h1{
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+}
+
+h2{
+  margin: 32px auto 0;
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 1.5px;
+  display: block;
+  width: 40%;
+  border-bottom: 1px solid black;
+}
+
+h3{
+  margin: 48px 0 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+p{
+  margin: 16px 0 0;
+}
+
+section{
+  padding: 64px 0;
+}
+
+section img{
+  margin: 16px 0 0;
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+section img.fade{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* header */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* hero */
+
+#hero{
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+#btn.absolute{
+  position: absolute;
+  top: 0;
+  right: 16px;
+}
+
+#btn img.big{
+  width: 80px;
+  height: auto;
+}
+
+#btn.fixed{
+  position: fixed;
+  top: 0;
+  right: 16px;
+  z-index: 3;
+}
+
+#pic1, #pic2, #pic3{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 1s;
+  z-index: -1;
+}
+
+#pic1.fadein, #pic2.fadein, #pic3.fadein{
+  opacity: 1;
+}
+
+/* gallery */
+#gallery{
+  position: relative;
+}
+
+#gallery h3{
+  position: absolute;
+  bottom: 100px;
+  right: 32px;
+  display: block;
+  width: 50%;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  background: rgba(255, 255, 255, .7);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s .5s;
+}
+
+#gallery h3.fade{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* products */
+
+.outer{
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+}
+
+.inner1, .inner2{
+  width: 200%;
+  display: flex;
+  justify-content: start;
+  transition: 1s;
+}
+
+.inner1.slide1, .inner2.slide1{
+  transform: translateX(-25%);
+}
+
+.inner1.slide2, .inner2.slide2{
+  transform: translateX(-50%);
+}
+
+.wrapper{
+  flex: 1;
+  width: 25%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.wrapper img{
+  width: 100%;
+  height: auto;
+}
+
+.slide-l1, .slide-l2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  height: 100%;
+  background: inherit;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.slide-r1, .slide-r2{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 32px;
+  height: 100%;
+  background: inherit;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* sns */
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; 
+  width: 200vw;
+}
+
+ul img{
+  width: 400px;
+  height: auto;
+}
+
+.ul1{
+  display: flex;
+  animation: infinity-scroll1 30s -10s infinite linear;
+}
+
+.ul2{
+  display: flex;
+  animation: infinity-scroll2 30s infinite linear;
+}
+
+.ul3{
+  display: flex;
+  animation: infinity-scroll3 30s infinite linear;
+}
+
+@keyframes infinity-scroll1{
+  from {
+    transform: translateX(100%);
+  }
+    to {
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes infinity-scroll2{
+  from {
+    transform: translateX(0);
+  }
+    to {
+    transform: translateX(-300%);
+  }
+}
+
+@keyframes infinity-scroll3{
+  from {
+    transform: translateX(0);
+  }
+    to {
+    transform: translateX(-300%);
+  }
+}
+
+/* inquiry */
+
+#inquiry .inner {
+  max-width: 800px;
+  margin: 32px auto 0;
+  padding: 64px 0;
+  display: block;
+  text-align: center;
+}
+
+label{
+  display: block;
+  margin-top: 24px;
+}
+
+input, textarea {
+  margin-top: 4px;
+  font-size: 16px;
+  width: 240px;
+  line-height: 1.8;
+}
+
+#inquiry .btn{
+  margin: 32px auto 0;
+  display: block;
+  text-decoration: none;
+  width: 100px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  border: none;
+  border-radius: 16px;
+  color: white;
+  background: pink;
+  opacity: .2;
+  cursor: not-allowed;
+  transition: 1s;
+}
+
+
+/* footer */
+
+footer{
+  padding: 64px;
+  text-align: center;
+  background: black;
+}
+
+small{
+  font-size: 14px;
+  color: white;
+}
+
+
+@media (min-width: 600px){
+
+  /* common */
+
+  h1{
+    font-size: 28px;
+  }
+
+  /* header */
+
+  header{
+    padding: 32px 16px;
+  }
+
+  /* hero */
+
+  #btn img.big{
+    width: 120px;
+    height: auto;
+  }
+
+  #hero{
+    height: 640px;
+  }
+
+  #pic1, #pic2, #pic3{
+    height: 640px;
+  }
+
+
+
+
+}

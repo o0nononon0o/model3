@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="container">
+    <h1>My Title</h1>
+  </header>
+
+  <div id="hero">
+    <a href="#inquiry" id="btn" class="absolute"><img class="big" src="お問い合わせ.png" width="64"></a>
+    <img id="pic1" class="fadein" src="hero1.jpg">
+    <img id="pic2" src="hero2.jpg">
+    <img id="pic3" src="hero3.jpg">
+  </div>
+
+  <main class="container">
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <img src="main.jpg" width="800">
+      <h3>全ての人に「綺麗」を</h3>
+    </section>
+    <section id="products">
+      <h2>Products</h2>
+      <div class="outer">
+        <h3>Skin Care</h3>
+        <div class="inner1">
+          <div class="wrapper">
+            <img src="item1.jpg">
+            <p>商品1</p>
+          </div>
+          <div class="wrapper">
+            <img src="item2.jpg">
+            <p>商品2</p>
+          </div>
+          <div class="wrapper">
+            <img src="item3.jpg">
+            <p>商品3</p>
+          </div>
+          <div class="wrapper">
+            <img src="item4.jpg">
+            <p>商品4</p>
+          </div>
+        </div>
+        <button class="slide-l1">≪</button>
+        <button class="slide-r1">≫</button>
+      </div>
+      <div class="outer">
+        <h3>Shampoo</h3>
+        <div class="inner2">
+          <div class="wrapper">
+            <img src="item5.jpg">
+            <p>商品5</p>
+          </div>
+          <div class="wrapper">
+            <img src="item6.jpg">
+            <p>商品6</p>
+          </div>
+          <div class="wrapper">
+            <img src="item7.jpg">
+            <p>商品7</p>
+          </div>
+          <div class="wrapper">
+            <img src="item8.jpg">
+            <p>商品8</p>
+          </div>
+        </div>
+        <button class="slide-l2">≪</button>
+        <button class="slide-r2">≫</button>
+      </div>
+    </section>
+    <section>
+      <h2>SNS</h2>
+    </section>
+    <section id="sns">
+      <ul>
+        <div class="ul1">
+          <li><img src="sns1.jpg"></li>
+          <li><img src="sns2.jpg"></li>
+        </div>
+        <div class="ul2">
+          <li><img src="sns3.jpg"></li>
+          <li><img src="sns4.jpg"></li>
+        </div>
+        <div class="ul3">
+          <li><img src="sns5.jpg"></li>
+          <li><img src="sns6.jpg"></li>
+        </div>
+      </ul>
+    </section>
+  </main>
+
+  <div id="inquiry">
+    <section class="inner">
+      <h3>お問い合わせ</h1>
+        <form method="post" name="form">
+          <div class="contact-form">
+              <label for="name">お名前</label>
+              <input type="text" id="name" name="name" placeholder="山田太郎" required />
+          </div>
+          <div class="contact-form">
+              <label for="email">メールアドレス</label>
+              <input type="text" id="email" name="email" placeholder="XXXX@example.com" required />
+          </div>
+          <div class="contact-form">
+              <label for="message">メッセージ</label>
+              <textarea id="message" name="message" placeholder="お問い合わせ内容" required /></textarea>
+          </div>
+          <input class="btn" type="submit" value="送信" disabled>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <small>(c)XXXXXX</small>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
