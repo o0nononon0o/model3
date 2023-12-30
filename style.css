@@ -100,7 +100,7 @@ header{
   position: absolute;
   top: 0;
   opacity: 0;
-  transition: 1s;
+  transition: 2s;
   z-index: -1;
 }
 
