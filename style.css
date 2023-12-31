@@ -196,6 +196,10 @@ header{
   z-index: 3;
 }
 
+button:hover{
+  opacity: .5;
+}
+
 /* sns */
 
 ul{
